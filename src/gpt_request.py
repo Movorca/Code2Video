@@ -140,9 +140,8 @@ def request_gemini_with_video(prompt: str, video_path: str, log_id=None, max_tok
     api_key = cfg("gemini", "api_key")
     model_name = cfg("gemini", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=api_key,
     )
 
@@ -210,9 +209,8 @@ def request_gemini_video_img(
     api_key = cfg("gemini", "api_key")
     model_name = cfg("gemini", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=api_key,
     )
 
@@ -294,9 +292,8 @@ def request_gemini_video_img_token(
     api_key = cfg("gemini", "api_key")
     model_name = cfg("gemini", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=api_key,
     )
 
@@ -383,9 +380,8 @@ def request_gemini(prompt, log_id=None, max_tokens=8000, max_retries=3):
     api_key = cfg("gemini", "api_key")
     model_name = cfg("gemini", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=api_key,
     )
 
@@ -436,9 +432,8 @@ def request_gemini_token(prompt, log_id=None, max_tokens=8000, max_retries=3):
     api_key = cfg("gemini", "api_key")
     model_name = cfg("gemini", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=api_key,
     )
 
@@ -498,9 +493,8 @@ def request_gpt4o(prompt, log_id=None, max_tokens=8000, max_retries=3):
     ak = cfg("gpt4o", "api_key")
     model_name = cfg("gpt4o", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=ak,
     )
 
@@ -560,9 +554,8 @@ def request_gpt4o_token(prompt, log_id=None, max_tokens=8000, max_retries=3):
     ak = cfg("gpt4o", "api_key")
     model_name = cfg("gpt4o", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=ak,
     )
 
@@ -632,9 +625,8 @@ def request_o4mini(prompt, log_id=None, max_tokens=8000, max_retries=3, thinking
     ak = cfg("gpt4omini", "api_key")
     model_name = cfg("gpt4omini", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=ak,
     )
 
@@ -691,9 +683,8 @@ def request_o4mini_token(prompt, log_id=None, max_tokens=8000, max_retries=3, th
     ak = cfg("gpt4omini", "api_key")
     model_name = cfg("gpt4omini", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=ak,
     )
 
@@ -759,9 +750,8 @@ def request_gpt5(prompt, log_id=None, max_tokens=1000, max_retries=3):
     ak = cfg("gpt5", "api_key")
     model_name = cfg("gpt5", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=ak,
     )
 
@@ -811,9 +801,8 @@ def request_gpt5_token(prompt, log_id=None, max_tokens=1000, max_retries=3):
     ak = cfg("gpt5", "api_key")
     model_name = cfg("gpt5", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=ak,
     )
 
@@ -872,9 +861,8 @@ def request_gpt41(prompt, log_id=None, max_tokens=1000, max_retries=3):
     api_key = cfg("gpt41", "api_key")
     model_name = cfg("gpt41", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=api_key,
     )
 
@@ -924,9 +912,8 @@ def request_gpt41_token(prompt, log_id=None, max_tokens=1000, max_retries=3):
     ak = cfg("gpt41", "api_key")
     model_name = cfg("gpt41", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=ak,
     )
 
@@ -985,9 +972,8 @@ def request_gpt41_img(prompt, image_path=None, log_id=None, max_tokens=1000, max
     ak = cfg("gpt41", "api_key")
     model_name = cfg("gpt41", "model")
 
-    client = openai.AzureOpenAI(
-        azure_endpoint=base_url,
-        api_version=api_version,
+    client = openai.OpenAI(
+        base_url=base_url,
         api_key=ak,
     )
     if log_id is None:
